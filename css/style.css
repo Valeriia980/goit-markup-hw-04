@@ -292,24 +292,28 @@ h3 {
   line-height: 1.18;
   text-align: center;
 }
-.social-link-item,
-.social-link-list {
-  display: flex;
-}
+
 .social-link-item {
-  justify-content: center;
+  display: inline-block;
   width: 44px;
   height: 44px;
-
-  margin-right: auto;
-  margin-left: auto;
+  background-position: center;
+  background-color: var(--main-text-color);
+  border-radius: 50%;
+}
+.social-link-item:hover {
+  background-color: var(--button-link-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: #eeeeee;
 }
 .social-link {
-  display: block;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .social-link-svg {
-  padding: 12px;
-
   fill: #afb1b8;
 }
 .social-link:hover .social-link-svg {
@@ -325,11 +329,6 @@ h3 {
 .cocial-svg:hover,
 .cocial-svg:focus {
   fill: var(--main-text-color);
-  background-color: var(--button-link-color);
-
-  border-radius: 50%;
-
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .social-link-list {
   display: flex;
@@ -442,11 +441,18 @@ footer .logotyp span {
   display: block;
 }
 .footer-list {
-  display: contents;
+  display: flex;
   justify-content: center;
   padding-left: 0;
   margin-top: 20px;
   margin-bottom: 0;
+}
+.social-link-footer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .footer-list-item:not(:last-child) {
   margin-right: 10px;
@@ -464,6 +470,27 @@ footer .logotyp span {
 .footer-list-item.facebook:hover,
 .footer-list-item.linkedin:hover {
   background-color: var(--button-link-color);
+}
+.join {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+.container-footer {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+.footer-main {
+  display: inline-block;
+}
+.footer-secondary {
+  display: inline-block;
 }
 /*portfolio*/
 .portfolio {
