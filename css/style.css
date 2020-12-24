@@ -89,7 +89,10 @@ body {
 .contacts a {
   color: var(--primary-text-color);
 }
-
+.nbn {
+  display: inline;
+  padding-right: 10px;
+}
 .contacts a:hover,
 .main-nav a:hover,
 .contacts-footer a:hover,
@@ -301,7 +304,8 @@ h3 {
   background-color: var(--main-text-color);
   border-radius: 50%;
 }
-.social-link-item:hover {
+.social-link-item:hover,
+.social-link-item:focus {
   background-color: var(--button-link-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   color: #eeeeee;
@@ -316,11 +320,9 @@ h3 {
 .social-link-svg {
   fill: #afb1b8;
 }
-.social-link:hover .social-link-svg {
-  fill: #ffffff;
-}
-.social-link:focus .social-link-svg {
-  fill: #ffffff;
+.social-link:hover,
+.social-link:focus {
+  fill: var(--main-text-color);
 }
 
 .cocial-svg {
@@ -347,7 +349,7 @@ h3 {
 }
 .clients-list-item {
   border: 1px solid #afb1b8;
-  box-sizing: content-box;
+  box-sizing: border-box;
   width: 170px;
   height: 90px;
   border-radius: 4px;
@@ -372,12 +374,17 @@ h3 {
   letter-spacing: 0.03em;
 }
 .clients-list-item:hover {
+  cursor: pointer;
   border-color: var(--button-link-color);
 }
 .clients-list-link-svg {
   fill: #afb1b8;
 }
-
+.clients-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .clients-list-link:hover .clients-list-link-svg,
 .clients-list-link:focus .clients-list-link-svg {
   fill: var(--button-link-color);
@@ -481,16 +488,25 @@ footer .logotyp span {
   text-transform: uppercase;
   color: var(--main-text-color);
 }
-.container-footer {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
-}
+
 .footer-main {
   display: inline-block;
 }
 .footer-secondary {
   display: inline-block;
+}
+footer .container {
+  display: flex;
+
+  padding-bottom: 60px;
+  padding-top: 72px;
+}
+.footer-list {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 /*portfolio*/
 .portfolio {
@@ -586,10 +602,6 @@ footer .logotyp span {
   color: var(--main-text-color);
 }
 
-.nbn {
-  display: inline;
-  padding-right: 10px;
-}
 .icon-heder {
   fill: currentColor;
 }
