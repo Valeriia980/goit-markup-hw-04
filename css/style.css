@@ -312,16 +312,18 @@ h3 {
 }
 .social-link {
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 44px;
+  height: 44px;
   align-items: center;
   justify-content: center;
 }
 .social-link-svg {
   fill: #afb1b8;
 }
-.social-link:hover,
-.social-link:focus {
+.social-link:hover .social-link-svg {
+  fill: var(--main-text-color);
+}
+.social-link:focus .social-link-svg {
   fill: var(--main-text-color);
 }
 
@@ -381,6 +383,8 @@ h3 {
   fill: #afb1b8;
 }
 .clients-list-link {
+  width: 170px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
