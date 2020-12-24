@@ -82,6 +82,11 @@ body {
 .nav-link-active {
   padding-top: 32px;
   padding-bottom: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 .navigation .nav-link {
   color: var(--title-text-color);
