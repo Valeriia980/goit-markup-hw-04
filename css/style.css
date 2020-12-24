@@ -320,11 +320,15 @@ h3 {
 .social-link-svg {
   fill: #afb1b8;
 }
-.social-link:hover .social-link-svg {
+.social-link:hover {
   fill: var(--main-text-color);
+  background-color: var(--button-link-color);
+  border-radius: 50%;
 }
-.social-link:focus .social-link-svg {
+.social-link:focus {
   fill: var(--main-text-color);
+  background-color: var(--button-link-color);
+  border-radius: 50%;
 }
 
 .cocial-svg {
