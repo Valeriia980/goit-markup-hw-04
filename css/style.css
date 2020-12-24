@@ -95,7 +95,9 @@ body {
   color: var(--primary-text-color);
 }
 .nbn {
-  display: inline;
+  display: flex;
+
+  align-items: baseline;
   padding-right: 10px;
 }
 .contacts a:hover,
@@ -119,7 +121,7 @@ body {
 .nav-link {
   padding-top: 32px;
   padding-bottom: 32px;
-
+  display: inline-flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -129,6 +131,14 @@ body {
   display: flex;
   font-size: 14px;
   margin-left: auto;
+  padding-right: 40px;
+  padding-left: 40;
+
+  align-items: center;
+}
+.icon-heder {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /*Hero*/
@@ -307,14 +317,8 @@ h3 {
   height: 44px;
   background-position: center;
   background-color: var(--main-text-color);
-  border-radius: 50%;
 }
-.social-link-item:hover,
-.social-link-item:focus {
-  background-color: var(--button-link-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  color: #eeeeee;
-}
+
 .social-link {
   display: flex;
   width: 44px;
@@ -325,9 +329,10 @@ h3 {
 
 .social-link:hover,
 .social-link:focus {
+  border-radius: 50%;
   fill: var(--main-text-color);
   background-color: var(--button-link-color);
-  border-radius: 50%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .social-link {
@@ -375,7 +380,8 @@ h3 {
 
   letter-spacing: 0.03em;
 }
-.clients-list-item:hover {
+.clients-list-item:hover,
+.clients-list-item:focus {
   cursor: pointer;
   border-color: var(--button-link-color);
 }
@@ -395,10 +401,7 @@ h3 {
 }
 
 /*footer*/
-footer .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 .footer-logo {
   display: inline-block;
 }
@@ -479,7 +482,11 @@ footer .logotyp span {
 .footer-list-item.instagram:hover,
 .footer-list-item.twitter:hover,
 .footer-list-item.facebook:hover,
-.footer-list-item.linkedin:hover {
+.footer-list-item.linkedin:hover,
+.footer-list-item.instagram:focus,
+.footer-list-item.twitter:focus,
+.footer-list-item.facebook:focus,
+.footer-list-item.linkedin:focus {
   background-color: var(--button-link-color);
 }
 .join {
@@ -608,8 +615,4 @@ footer .container {
 .work-expirience:hover,
 .work-expirience:focus {
   color: var(--main-text-color);
-}
-
-.icon-heder {
-  fill: currentColor;
 }
