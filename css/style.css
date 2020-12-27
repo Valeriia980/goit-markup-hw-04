@@ -131,9 +131,6 @@ body {
   display: flex;
   font-size: 14px;
   margin-left: auto;
-  padding-right: 40px;
-  padding-left: 40;
-
   align-items: center;
 }
 .icon-heder {
@@ -199,24 +196,15 @@ h3 {
 }
 
 /*future*/
-.icons-for-futue {
+.antenna {
   display: flex;
-  padding-left: 0;
-  justify-content: space-between;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.future-icons {
-  margin-bottom: 30px;
-
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
+  margin-bottom: 30px;
   background-color: var(--section-bgc);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -252,6 +240,7 @@ h3 {
 }
 .work-type {
   display: flex;
+  justify-content: center;
 }
 .work-type > .link:not(:last-child) {
   margin-right: 30px;
@@ -297,7 +286,7 @@ h3 {
 }
 .command {
   padding-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .name {
@@ -309,6 +298,9 @@ h3 {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+}
+.prof {
+  margin-bottom: 16px;
 }
 
 .social-link-item {
@@ -343,7 +335,6 @@ h3 {
   display: flex;
   justify-content: space-between;
   padding-left: 0px;
-  margin-bottom: 30px;
 
   margin-left: auto;
   margin-right: auto;
@@ -353,7 +344,9 @@ h3 {
 /* Постоянные клиенты */
 .section .container {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
+
 .clients-list-item {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -372,7 +365,6 @@ h3 {
   margin-bottom: 0;
 }
 .tittle-clients {
-  margin-top: 94px;
   margin-bottom: 50px;
   text-align: center;
   font-size: 36px;
@@ -514,7 +506,7 @@ footer .container {
   display: flex;
 
   padding-bottom: 60px;
-  padding-top: 72px;
+  padding-top: 60px;
 }
 .footer-list {
   display: flex;
